@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ARCHITECTS | Global Elite Portal</title>
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --dark-bg: #0a0a0a;
+            --card-bg: #141414;
+            --text-gray: #b0b0b0;
+            --text-light: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif, Arial;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(10, 10, 10, 0.95);
+            border-bottom: 1px solid var(--primary-gold);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-gold);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        .nav-links a {
+            color: var(--text-gray);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=2071');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 2px solid var(--primary-gold);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 5px;
+        }
+
+        .hero p {
+            font-style: italic;
+            color: var(--primary-gold);
+            max-width: 600px;
+        }
+
+        /* Content Grid */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .article-card {
+            background: var(--card-bg);
+            border: 1px solid #333;
+            transition: transform 0.3s, border-color 0.3s;
+            overflow: hidden;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-gold);
+        }
+
+        .card-img {
+            height: 200px;
+            background-color: #333;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .category {
+            color: var(--primary-gold);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .article-card h2 {
+            font-size: 1.4rem;
+            margin: 10px 0;
+        }
+
+        .article-card p {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--primary-gold);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            border-top: 1px solid #333;
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">ARCHITECTS</div>
+        <div class="nav-links">
+            <a href="#">ARCHIVES</a>
+            <a href="#">THE NETWORK</a>
+            <a href="#">INTEL</a>
+            <a href="#">CONTACT</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>THE SILENT HAND</h1>
+        <p>"Behind the curtain of global politics lies a theater where the script is written before the actors take the stage."</p>
+    </header>
+
+    <div class="container">
+        <article class="article-card">
+            <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=2000" class="card-img" alt="Digital Currency">
+            <div class="card-content">
+                <span class="category">Financial Control</span>
+                <h2>CBDC: Akhir dari Kebebasan Finansial?</h2>
+                <p>Analisis mendalam mengenai bagaimana mata uang digital bank sentral akan menggantikan uang tunai dan memberikan kontrol penuh atas transaksi warga global.</p>
+                <a href="#" class="read-more">DECRYPT INTEL →</a>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&q=80&w=2070" class="card-img" alt="Secret Meeting">
+            <div class="card-content">
+                <span class="category">Geopolitics</span>
+                <h2>Agenda Davos 2026: Great Reset Tahap II</h2>
+                <p>Apa yang dibicarakan di balik pintu tertutup mengenai restrukturisasi energi global dan konsep kepemilikan aset di masa depan?</p>
+                <a href="#" class="read-more">DECRYPT INTEL →</a>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&q=80&w=2070" class="card-img" alt="Cybernetics">
+            <div class="card-content">
+                <span class="category">Technology</span>
+                <h2>Integrasi AI: Menuju Era Transhumanisme</h2>
+                <p>Bagaimana elit teknologi dunia merancang integrasi saraf manusia dengan kecerdasan buatan untuk menciptakan strata sosial baru.</p>
+                <a href="#" class="read-more">DECRYPT INTEL →</a>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 THE ARCHITECTS PORTAL. DATA IS PRIVILEGE. SILENCE IS SURVIVAL.</p>
+    </footer>
+
+</body>
+</html>
